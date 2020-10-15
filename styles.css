@@ -1,0 +1,88 @@
+header {
+  color: white;
+  grid-row: hd-start / hd-end;
+  grid-column: main-start / sidebar-end;
+  background-color: rgb(253, 196, 74);
+
+}
+
+footer {
+  color: white;
+  grid-row: ft-start / ft-end;
+  grid-column: main-start / sidebar-end;
+  background-color: rgb(253, 196, 74);
+  text-align: center;
+}
+
+body{
+  margin: 0;
+}
+
+.main {
+  grid-column: main-start / main-end;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.item {
+  justify-content: center;
+  padding: 1em;
+  background-color:  rgb(255, 224, 158);
+  height: 12.5em;
+  align-items: center;
+}
+
+.btn {
+  background-color: rgb(253, 196, 74); 
+  border: none; 
+  color: white; 
+  padding: 12px 16px;
+  width: 400px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.btn:hover {
+  background-color: rgb(250, 184, 42);
+}
+
+.navi {
+  background-color: rgb(253, 196, 74); 
+  border: none; 
+  color: white; 
+  padding: 12px 16px;
+  font-size: .75em; 
+  cursor: pointer; 
+}
+
+.nav:hover {
+  background-color: rgb(250, 184, 42);
+}
+
+.grid {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  grid-template-columns: [main-start] 100% [main-end];
+  grid-template-rows:[hd-start] 100px [hd-end main-start] 100% [main-end ft-start] 100px [ft-end];
+}
+
+.grid>* {
+  font-size: 2.3em;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hdr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hdr-left, .hdr-right, footer {
+  padding: .75em 2em;
+}
+
